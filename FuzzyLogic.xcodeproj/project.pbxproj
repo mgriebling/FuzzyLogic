@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		476B784C1B97008300EFEDAC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B784B1B97008300EFEDAC /* main.swift */; };
+		476B78531B9700AB00EFEDAC /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78521B9700AB00EFEDAC /* Fuzzy.swift */; settings = {ASSET_TAGS = (); }; };
+		476B78551B97020A00EFEDAC /* FuzzySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78541B97020A00EFEDAC /* FuzzySet.swift */; settings = {ASSET_TAGS = (); }; };
+		476B78571B97024400EFEDAC /* FAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78561B97024400EFEDAC /* FAM.swift */; settings = {ASSET_TAGS = (); }; };
+		476B78591B97028700EFEDAC /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78581B97028700EFEDAC /* Members.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,11 @@
 /* Begin PBXFileReference section */
 		476B78481B97008300EFEDAC /* FuzzyLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FuzzyLogic; sourceTree = BUILT_PRODUCTS_DIR; };
 		476B784B1B97008300EFEDAC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		476B78521B9700AB00EFEDAC /* Fuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzy.swift; sourceTree = "<group>"; };
+		476B78541B97020A00EFEDAC /* FuzzySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuzzySet.swift; sourceTree = "<group>"; };
+		476B78561B97024400EFEDAC /* FAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAM.swift; sourceTree = "<group>"; };
+		476B78581B97028700EFEDAC /* Members.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
+		476B785A1B97053B00EFEDAC /* C++ Classes for Fuzzy Logic | Dr Dobb's.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C++ Classes for Fuzzy Logic | Dr Dobb's.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				476B784B1B97008300EFEDAC /* main.swift */,
+				476B78521B9700AB00EFEDAC /* Fuzzy.swift */,
+				476B78541B97020A00EFEDAC /* FuzzySet.swift */,
+				476B78561B97024400EFEDAC /* FAM.swift */,
+				476B78581B97028700EFEDAC /* Members.swift */,
+				476B785A1B97053B00EFEDAC /* C++ Classes for Fuzzy Logic | Dr Dobb's.pdf */,
 			);
 			path = FuzzyLogic;
 			sourceTree = "<group>";
@@ -118,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476B78571B97024400EFEDAC /* FAM.swift in Sources */,
+				476B78591B97028700EFEDAC /* Members.swift in Sources */,
+				476B78531B9700AB00EFEDAC /* Fuzzy.swift in Sources */,
 				476B784C1B97008300EFEDAC /* main.swift in Sources */,
+				476B78551B97020A00EFEDAC /* FuzzySet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
