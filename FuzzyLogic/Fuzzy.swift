@@ -10,14 +10,16 @@ import Foundation
 
 public struct Fuzzy : FloatLiteralConvertible, Comparable, CustomStringConvertible {
     
+    private var _truth: Double
     public var truth: Double {
-        get { return self.truth }
-        set { self.truth = newValue >= 0.0 && newValue <= 1.0 ? newValue : 0.0 }
+        get { return _truth }
+        set { _truth = newValue >= 0.0 && newValue <= 1.0 ? newValue : 0.0 }
     }
     
     public var description: String { return "\(truth)" }
     
     public init(_ truth: Double = 0.0) {
+        _truth = 0
         self.truth = truth
     }
     
@@ -41,11 +43,6 @@ public struct Fuzzy : FloatLiteralConvertible, Comparable, CustomStringConvertib
         return Fuzzy(1.0 - fabs(value_a.truth - value_b.truth))
     }
     
-    //ostream& operator<<(ostream& s, const Fuzzy& z)
-    //{
-    //    return s << z.truth;
-    //}
-    //
     //istream& operator>>(istream& s, Fuzzy& fur)
     //{
     //    auto double lint = 0.0;
