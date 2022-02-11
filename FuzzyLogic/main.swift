@@ -9,13 +9,13 @@
 import Foundation
 
 func input() -> String {
-    let keyboard = NSFileHandle.fileHandleWithStandardInput()
+    let keyboard = FileHandle.standardInput
     let inputData = keyboard.availableData
-    return NSString(data: inputData, encoding: NSUTF8StringEncoding) as! String
+    return String(data: inputData, encoding: .utf8)!
 }
 
 var temperature, open_inches : Double
-var weights = [Double](count: 3, repeatedValue: 0)
+var weights = [Double](repeating: 0, count: 3)
 
 var temperature_set = FuzzySet(size: 4)
 var set_result = FuzzySet(size: 3)
@@ -31,7 +31,7 @@ var part_open = trapezoidMembership(4.0, 8.0, 10.0, 14.0)
 var open = trapezoidMembership(10.0, 14.0, 16.0, 18.0)
 
 print("Enter the outside temperature: ", terminator: "")
-let t = input().stringByReplacingOccurrencesOfString("\n", withString: "")
+let t = input().replacingOccurrences(of: "\n", with: "")
 temperature = Double(t)!
 
 temperature_set[0] = cold.membership(temperature)

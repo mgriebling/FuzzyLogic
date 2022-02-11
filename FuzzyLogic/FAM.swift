@@ -10,14 +10,14 @@ import Foundation
 
 public struct FAM : CustomStringConvertible {
     
-    private var fam: [FuzzySet]
+    fileprivate var fam: [FuzzySet]
     
     public init(setqty : Int = 1, setlen : Int = 1) {
         if setqty < 1 || setlen < 1 {
             print("FAM dimensions less than 1: \(setqty) \(setlen)")
             fam = [FuzzySet]()
         } else {
-            fam = [FuzzySet](count: setqty, repeatedValue: FuzzySet(size: setlen))
+            fam = [FuzzySet](repeating: FuzzySet(size: setlen), count: setqty)
         }
     }
 

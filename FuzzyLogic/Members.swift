@@ -10,11 +10,11 @@ import Foundation
 
 public class membershipFunction {
     
-    public func membership(value: Double) -> Fuzzy {
+    public func membership(_ value: Double) -> Fuzzy {
         return Fuzzy(0.0)
     }
     
-    public func weight(value: Fuzzy) -> Double {
+    public func weight(_ value: Fuzzy) -> Double {
         return 0.0
     }
 }
@@ -38,7 +38,7 @@ public class trapezoidMembership : membershipFunction {
         }
     }
 
-    public func set (left_zero : Double = 0.0, left_high : Double = 0.0, right_high : Double = 0.0, right_zero : Double = 0.0) {
+    public func set (_ left_zero : Double = 0.0, left_high : Double = 0.0, right_high : Double = 0.0, right_zero : Double = 0.0) {
         leftZero = left_zero
         leftHigh = left_high
         rightHigh = right_high
@@ -55,14 +55,14 @@ public class trapezoidMembership : membershipFunction {
         }
     }
 
-    public func get (inout left_zero : Double, inout left_high : Double, inout right_high : Double, inout right_zero : Double) {
+    public func get (_ left_zero : inout Double, left_high : inout Double, right_high : inout Double, right_zero : inout Double) {
         left_zero = leftZero
         left_high = leftHigh
         right_high = rightHigh
         right_zero = rightZero
     }
 
-    override public func membership (value: Double) -> Fuzzy {
+    override public func membership (_ value: Double) -> Fuzzy {
         var truth = Fuzzy(0.0)
         
         if value <= leftZero || value >= rightZero {
@@ -83,7 +83,7 @@ public class trapezoidMembership : membershipFunction {
         return truth
     }
 
-    override public func weight(value: Fuzzy) -> Double {
+    override public func weight(_ value: Fuzzy) -> Double {
         var a, b, h, area, right_x, left_x: Double
         
         h = value.truth

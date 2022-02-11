@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		476B784C1B97008300EFEDAC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B784B1B97008300EFEDAC /* main.swift */; };
-		476B78531B9700AB00EFEDAC /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78521B9700AB00EFEDAC /* Fuzzy.swift */; settings = {ASSET_TAGS = (); }; };
-		476B78551B97020A00EFEDAC /* FuzzySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78541B97020A00EFEDAC /* FuzzySet.swift */; settings = {ASSET_TAGS = (); }; };
-		476B78571B97024400EFEDAC /* FAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78561B97024400EFEDAC /* FAM.swift */; settings = {ASSET_TAGS = (); }; };
-		476B78591B97028700EFEDAC /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78581B97028700EFEDAC /* Members.swift */; settings = {ASSET_TAGS = (); }; };
+		476B78531B9700AB00EFEDAC /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78521B9700AB00EFEDAC /* Fuzzy.swift */; };
+		476B78551B97020A00EFEDAC /* FuzzySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78541B97020A00EFEDAC /* FuzzySet.swift */; };
+		476B78571B97024400EFEDAC /* FAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78561B97024400EFEDAC /* FAM.swift */; };
+		476B78591B97028700EFEDAC /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B78581B97028700EFEDAC /* Members.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,20 +102,22 @@
 		476B78401B97008300EFEDAC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Computer Inspirations";
 				TargetAttributes = {
 					476B78471B97008300EFEDAC = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
 			buildConfigurationList = 476B78431B97008300EFEDAC /* Build configuration list for PBXProject "FuzzyLogic" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 476B783F1B97008300EFEDAC;
 			productRefGroup = 476B78491B97008300EFEDAC /* Products */;
@@ -147,17 +149,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -190,17 +204,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -218,20 +244,25 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
 		476B78501B97008300EFEDAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		476B78511B97008300EFEDAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -254,6 +285,7 @@
 				476B78511B97008300EFEDAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

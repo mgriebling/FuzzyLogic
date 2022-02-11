@@ -10,11 +10,11 @@ import Foundation
 
 public struct FuzzySet : Comparable, CustomStringConvertible {
     
-    private var data: [Fuzzy]
+    fileprivate var data: [Fuzzy]
 
     public init(size: Int = 1) { // constructor
         let dimension = size >= 0 ? size : 1
-        data = [Fuzzy](count: dimension, repeatedValue: Fuzzy(0.0))
+        data = [Fuzzy](repeating: Fuzzy(0.0), count: dimension)
     }
 
     public init(set: FuzzySet) {
@@ -36,7 +36,7 @@ public struct FuzzySet : Comparable, CustomStringConvertible {
         return s + "\(data.last!))"
     }
 
-    public static func max(set: FuzzySet) -> Fuzzy {
+    public static func max(_ set: FuzzySet) -> Fuzzy {
         var tmp_fuzzy = Fuzzy(0.0)
         
         for i in 0..<set.data.count {

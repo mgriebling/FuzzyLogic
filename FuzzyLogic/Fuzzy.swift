@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Fuzzy : FloatLiteralConvertible, Comparable, CustomStringConvertible {
+public struct Fuzzy : ExpressibleByFloatLiteral, Comparable, CustomStringConvertible {
     
     private var _truth: Double
     public var truth: Double {
@@ -67,11 +67,11 @@ public func & (lhs : Fuzzy, rhs: Fuzzy) -> Fuzzy {
     return lhs.truth < rhs.truth ? lhs : rhs
 }
 
-public func |= (inout value: Fuzzy, b: Fuzzy) {
+public func |= (value: inout Fuzzy, b: Fuzzy) {
     value = value | b
 }
 
-public func &= (inout value: Fuzzy, b: Fuzzy) {
+public func &= (value: inout Fuzzy, b: Fuzzy) {
     value = value & b
 }
 
