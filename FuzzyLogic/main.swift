@@ -8,11 +8,11 @@
 
 import Foundation
 
-func input() -> String {
-    let keyboard = FileHandle.standardInput
-    let inputData = keyboard.availableData
-    return String(data: inputData, encoding: .utf8)!
-}
+//func input() -> String {
+//    let keyboard = FileHandle.standardInput
+//    let inputData = keyboard.availableData
+//    return String(data: inputData, encoding: .utf8)!
+//}
 
 var temperature, open_inches : Double
 var weights = [Double](repeating: 0, count: 3)
@@ -30,8 +30,9 @@ var closed = trapezoidMembership(0.0, 2.0, 4.0, 8.0)
 var part_open = trapezoidMembership(4.0, 8.0, 10.0, 14.0)
 var open = trapezoidMembership(10.0, 14.0, 16.0, 18.0)
 
-print("Enter the outside temperature: ", terminator: "")
-let t = input().replacingOccurrences(of: "\n", with: "")
+print("Enter the outside temperature (in ℉):")
+let input = readLine()!
+let t = input.replacingOccurrences(of: "\n", with: "")
 temperature = Double(t)!
 
 temperature_set[0] = cold.membership(temperature)
